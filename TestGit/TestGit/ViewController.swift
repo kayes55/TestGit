@@ -10,12 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func pushBtnAction(_ sender: UIButton) {
+    }
+    
+    
+    //MARK:- segue goes here
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoNewVC" {
+            if let destination = segue.destination as? NewVC {
+                destination.name = self.nameTextField.text
+            }
+            
+        }
     }
     
 }
