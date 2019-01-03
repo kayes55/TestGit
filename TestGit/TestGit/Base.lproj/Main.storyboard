@@ -100,6 +100,37 @@
             </objects>
             <point key="canvasLocation" x="1832.8" y="133.5832083958021"/>
         </scene>
+        <!--DetailVC-->
+        <scene sceneID="oJK-jx-cnB">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="uzl-hZ-wRJ" customClass="DetailVC" customModule="TestGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fug-Bp-LIR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joK-cw-7r3">
+                                <rect key="frame" x="35" y="220" width="305" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="joK-cw-7r3" firstAttribute="top" secondItem="grK-Vv-wIh" secondAttribute="top" constant="200" id="RjQ-rJ-9Ug"/>
+                            <constraint firstItem="grK-Vv-wIh" firstAttribute="trailing" secondItem="joK-cw-7r3" secondAttribute="trailing" constant="35" id="ZKx-CC-g8B"/>
+                            <constraint firstItem="joK-cw-7r3" firstAttribute="leading" secondItem="grK-Vv-wIh" secondAttribute="leading" constant="35" id="ty1-1c-fkd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grK-Vv-wIh"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="joK-cw-7r3" id="VWU-cU-qnS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U79-Vj-kcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="138.98050974512745"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PCA-nJ-ZvG">
             <objects>
